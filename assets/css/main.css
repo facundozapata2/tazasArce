@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --logo-size-m: 64px;
+    --header-bg-color: #bbb;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid #f00; */
+}
+
+html {
+    font-family: 'roboto', sans-serif;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    background-color: #666;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* wrapper */
+
+.headerNcarrouselWrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* header styles */
+/* ..assets/componentes/header.css component  */
+/* Estilo básico del header */
+
+/* header end */
+/* whatsapp icon */
+.fa-square-whatsapp{
+    position: fixed;
+    z-index: 10;
+    bottom: 3rem;
+    right: 3rem;
+
+}
+
+.carrousel{
+    position: relative;
+    flex: 1;
+}
+
+.fixed-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1{
+    background-color: rgba(255, 255, 255, .6);
+    padding: 8px 6px;
+    border-radius: 12px;
+    color: #000;
+}
+
+.fixed-content a{
+    width: auto;
+    margin: auto;
+    padding: 6px 8px;
+}
+
+/* slide */
+
+.carousel-slide {
+    display: flex;
+    animation: slide 20s infinite;
+    width: 100%;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    height: 100vh;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animación del Carrusel */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    100% { transform: translateX(0); }
+}
+
+
+/* mobile first */
+
+.product-card_section{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+/* desktop */
+@media (min-width: 787px){
+    .product-card_section{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* section .about-us */
+
+.about-us_section{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 1rem;
+    word-wrap: break-word;
+    background-color: var(--header-bg-color);
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.about-us_section::before{
+    content: '';
+    background-image: url(../img/png/logo-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    right: 10rem;
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
+
+.about-us_section div{
+    display: inherit;
+    flex-direction: inherit;
+    gap: 1rem;
+}
+
+.about-us_section span{
+    z-index: 10;
+    font-weight: 500;
+}
+
+.about-us_section h2, 
+.about-us_section a,
+.about-us_section span{
+    font-size: 1rem;
+}
+
+.about-us_section a{
+    z-index: 10;
+    text-align: center;
+    width: auto;
+    margin: auto;
+    outline: 1px solid #000;
+    color: #000;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+/* trade-cost */
+
+.travelling-cost{
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+
