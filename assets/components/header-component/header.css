@@ -20,6 +20,8 @@
 
 .logo-container{
     position: relative;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .logo-container::after{
