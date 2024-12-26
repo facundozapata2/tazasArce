@@ -195,7 +195,16 @@ h1{
 .travelling-cost{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 1rem 0;
+    gap: 1rem;
+}
+
+.travelling-cost h3{
+    font-size: 1.5rem;
+    border-bottom: 2px solid #000;
+    width: fit-content;
+    margin: auto;
 }
 
 
