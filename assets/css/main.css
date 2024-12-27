@@ -193,11 +193,14 @@ h1{
 /* trade-cost */
 
 .travelling-cost{
+    text-align: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 1rem 0;
     gap: 1rem;
+
 }
 
 .travelling-cost h3{
@@ -207,4 +210,29 @@ h1{
     margin: auto;
 }
 
+.travelling-cost span{
+    font-weight: 600;
+    font-size: 1.25rem;
 
+}
+
+.travelling-cost img{
+    aspect-ratio: 1/1;
+    width: 100%;
+}
+
+@media screen and (min-width: 787px){
+    .travelling-cost{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .travelling-cost img{
+        width: 35%;
+        aspect-ratio: 1/1;
+
+    }
+}
+
+/* *{
+    outline: 1px solid #f00;
+} */
