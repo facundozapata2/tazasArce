@@ -8,7 +8,7 @@ class Mainfooter extends HTMLElement {
     async connectedCallback() {
     try {
       // html
-    const response = await fetch('./assets/components/footer-component/footer.html');
+    const response = await fetch('/assets/components/footer-component/footer.html');
     if (!response.ok) {
         throw new Error(`Error al cargar el HTML: ${response.statusText}`);
     }
@@ -17,11 +17,11 @@ class Mainfooter extends HTMLElement {
       // css
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = './assets/components/footer-component/footer.css';
+    link.href = '/assets/components/footer-component/footer.css';
     document.head.appendChild(link);
       // js
     const script = document.createElement("script");
-    script.src = './assets/js/footer.js';
+    script.src = '/assets/js/footer.js';
     script.defer = true;
     document.body.appendChild(script);
 

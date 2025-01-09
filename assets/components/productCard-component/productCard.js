@@ -6,7 +6,7 @@ class ProductCard extends HTMLElement {
   async connectedCallback() {
     try {
       // Cargar HTML
-      const response = await fetch('./assets/components/productCard-component/productCard.html');
+      const response = await fetch('/assets/components/productCard-component/productCard.html');
       if (!response.ok) {
         throw new Error(`Error al cargar el HTML: ${response.statusText}`);
       }
@@ -15,7 +15,7 @@ class ProductCard extends HTMLElement {
       // CSS
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = './assets/components/productCard-component/productCard.css';
+      link.href = '/assets/components/productCard-component/productCard.css';
       document.head.appendChild(link);
 
       // Asignar datos dinámicos
