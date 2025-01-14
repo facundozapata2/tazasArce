@@ -5,20 +5,19 @@ class ProductCard extends HTMLElement {
 
   async connectedCallback() {
     try {
-      // Cargar HTML
+      // htm
       const response = await fetch('/assets/components/productCard-component/productCard.html');
       if (!response.ok) {
         throw new Error(`Error al cargar el HTML: ${response.statusText}`);
       }
       this.innerHTML = await response.text();
 
-      // CSS
+      // css
       const link = document.createElement('link');
       link.rel = 'stylesheet';
       link.href = '/assets/components/productCard-component/productCard.css';
       document.head.appendChild(link);
 
-      // Asignar datos dinámicos
       this.setDataAttributes();
 
     } catch (error) {
@@ -27,7 +26,7 @@ class ProductCard extends HTMLElement {
   }
   // Lógica para asignar datos dinámicos
   setDataAttributes() {
-    // Leer atributos del componente
+    // tomar atributos
     const link = this.getAttribute('data-link') || '#';
     const image = this.getAttribute('data-image') || '';
     const title = this.getAttribute('data-title') || 'Sin título';
@@ -39,11 +38,10 @@ class ProductCard extends HTMLElement {
 
     if (anchor) anchor.href = link;
     if (img) img.src = image;
-    if (img) img.alt = title; // Usar el título como texto alternativo
+    if (img) img.alt = title;
     if (h2) h2.textContent = title;
   }
 }
 
-// Define el componente ProductCard
 window.customElements.define('product-card', ProductCard);
 

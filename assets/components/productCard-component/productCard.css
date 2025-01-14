@@ -1,14 +1,7 @@
-/* div{
-    display: flex;
-    gap: 1rem;
-    text-align: center;
-} */
-
 .product_card-container{
     display: flex;
     margin: auto;
     flex-direction: column;
-    /* width: 40vw; */
     overflow: hidden;
     background-color: #444;
     color: #fff;
