@@ -22,7 +22,9 @@ html {
 
 body {
     width: 100%;
-    background-color: #666;
+    background-color: #ddd;
+    overflow-x: hidden;
+    /* arreglando problema de desboradmiento vw */
 }
 
 a {

@@ -19,8 +19,25 @@
     filter: brightness(.75);
 }
 
+/* desktop */
+
+@media (min-width: 787px){
+    .product-bg-img-container{
+        width: 100vw;
+        height: 400px;
+        aspect-ratio: 16/9;
+    }
+    .product-bg-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
 
 .product-title{
+    margin-top: 1rem; /* for very small devices */
     font-size: 1.2rem;
     font-weight: 450;
     color: #fff;
@@ -33,9 +50,19 @@
 
 .product-grill{
     padding: 0 1rem;
-    gap: .25rem;
+    gap: .1rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+/* desktop */
+
+@media (min-width: 787px){
+    .product-grill{
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0;
+    
+    }
 }
 
 .product-grill img{

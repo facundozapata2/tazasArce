@@ -28,14 +28,6 @@
     align-items: center;
 }
 
-.social-media_footer > .fa-brands{
-    transition: color .35s ease-in-out;
-}
-
-.social-media_footer > .fa-brands:hover{
-    color: red;
-}
-
 .social-media_footer p{
     font-weight: 450;
 }

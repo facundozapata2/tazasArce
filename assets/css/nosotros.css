@@ -1,0 +1,86 @@
+.about-title{
+    background-image: url('/assets/img/webp/buzos-header.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-title h2{
+    font-size: 2.225rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.about-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    width: 100%;
+    padding: 0 1rem
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-text h1{
+    color: #145b2c;
+    background: none;
+}
+
+.about-text p{
+    font-weight: 400;
+}
+
+.about-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.about-card-container i{
+    font-size: 1.75rem;
+    color: rgb(214, 190, 62);
+}
+
+.about-card{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem;
+    outline: 1px solid #ccc;
+    border: 1rem;
+}
+
+
+.our-mission{
+    width: 100vw;
+    padding: 0 1rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background: linear-gradient(to top, #13592b, rgba(19, 89, 43, 0.7));
+}
+
+.our-mission div:first-child{
+    margin-top: 2rem;
+}
+
+.our-mission  div:last-child{
+    margin-bottom: 2rem;
+}

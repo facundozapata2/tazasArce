@@ -19,11 +19,6 @@ class Mainfooter extends HTMLElement {
     link.rel = 'stylesheet';
     link.href = '/assets/components/footer-component/footer.css';
     document.head.appendChild(link);
-      // js
-    const script = document.createElement("script");
-    script.src = '/assets/js/footer.js';
-    script.defer = true;
-    document.body.appendChild(script);
 
         } catch (error) {
             console.error('Error al cargar el componente Footer:', error);
