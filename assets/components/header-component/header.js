@@ -6,7 +6,7 @@ class MainHeader extends HTMLElement {
   async connectedCallback() {
     try {
       // html
-      const response = await fetch('/assets/components/header-component/header.html');
+      const response = await fetch('./assets/components/header-component/header.html');
       if (!response.ok) {
         throw new Error(`Error al cargar el HTML: ${response.statusText}`);
       }
@@ -15,7 +15,7 @@ class MainHeader extends HTMLElement {
       // css
       const link = document.createElement('link');
       link.rel = 'stylesheet';
-      link.href = '/assets/components/header-component/header.css';
+      link.href = './assets/components/header-component/header.css';
       document.head.appendChild(link);
       // js
       const script = document.createElement("script");
