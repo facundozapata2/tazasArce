@@ -1,0 +1,16 @@
+/* .contact-top-img{
+    position: relative;
+} */
+
+/* .contact-top-img::before{
+    content: 'Contacto';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2rem;
+    z-index: 100000000;
+    text-align: center;
+} */
