@@ -14,3 +14,34 @@
     z-index: 100000000;
     text-align: center;
 } */
+
+.contact_social-media-list{
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+@media screen and (min-width: 787px){
+    .contact_social-media-list{
+        justify-content: space-evenly;
+
+    }
+}
+
+.contact_copy-writting{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: #ccc;
+    text-align: center;
+}
+
+.contact_copy-writting > section{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+

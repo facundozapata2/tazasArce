@@ -36,6 +36,17 @@ li {
     list-style-type: none;
 }
 
+i{
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+i:hover,
+i:active{
+    color: #aaa;
+    scale: 1.1;
+}
+
 /* wrapper */
 
 .headerNcarrouselWrapper{
@@ -51,7 +62,7 @@ li {
 
 /* header end */
 /* whatsapp icon */
-.fa-square-whatsapp{
+.whatsapp-fixed{
     position: fixed;
     z-index: 10;
     bottom: 3rem;
