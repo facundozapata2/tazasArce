@@ -74,3 +74,8 @@
 .product-grill img:hover{
     filter: brightness(.75);
 }
+
+.product-img{
+    height: clamp(100% 120px 180px);
+    width: 100%;
+}
