@@ -128,7 +128,8 @@ h1{
 /* mobile first */
 
 .product-card_section{
-    margin: 1rem;
+    /* width: 100 */
+    margin: 1rem 0;
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
