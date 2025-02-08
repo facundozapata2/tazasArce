@@ -51,9 +51,11 @@
 }
 
 .product-grill{
+    width: 100%;
     padding: 0 1rem;
     gap: .1rem;
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -68,8 +70,7 @@
 }
 
 .product-grill img{
-    /* width: 100%; */
-    width: clamp(230px, 150px, 100px);
+    width: clamp(200px, 150px, 100px);
     height: clamp(100px, 150px, 400px);
     aspect-ratio: 16/9;
     object-fit: cover;
