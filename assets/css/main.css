@@ -11,6 +11,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    outline: 1px solid #f00;
     /* outline: 1px solid #f00; */
 }
 
@@ -23,7 +24,7 @@ html {
 body {
     width: 100%;
     background-color: #ddd;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* arreglando problema de desboradmiento vw */
 }
 
@@ -56,11 +57,7 @@ i:active{
     overflow: hidden;
 }
 
-/* header styles */
-/* ..assets/componentes/header.css component  */
-/* Estilo básico del header */
 
-/* header end */
 /* whatsapp icon */
 .whatsapp-fixed{
     position: fixed;
