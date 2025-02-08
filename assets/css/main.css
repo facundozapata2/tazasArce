@@ -129,10 +129,11 @@ h1{
 .product-card_section{
     margin: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     place-items: center;
     gap: 1rem;
 }
+
 
 /* desktop */
 @media (min-width: 787px){
