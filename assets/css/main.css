@@ -11,8 +11,6 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    outline: 1px solid #f00;
-    /* outline: 1px solid #f00; */
 }
 
 html {
@@ -24,8 +22,6 @@ html {
 body {
     width: 100%;
     background-color: #ddd;
-    /* overflow-x: hidden; */
-    /* arreglando problema de desboradmiento vw */
 }
 
 a {
