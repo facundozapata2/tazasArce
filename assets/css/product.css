@@ -8,6 +8,7 @@
 
 .product-header{
     position: relative;
+    width: 100%;
 }
 
 .product-bg-img-container{
@@ -16,6 +17,7 @@
 
 .product-bg-img{
     width: 100%;
+    object-fit: cover;
     filter: brightness(.75);
 }
 
@@ -52,7 +54,7 @@
     padding: 0 1rem;
     gap: .1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /* desktop */
@@ -66,7 +68,11 @@
 }
 
 .product-grill img{
-    width: 100%;
+    /* width: 100%; */
+    width: clamp(230px, 150px, 100px);
+    height: clamp(100px, 150px, 400px);
+    aspect-ratio: 16/9;
+    object-fit: cover;
     transition: filter .35s;
     cursor: pointer;
 }
