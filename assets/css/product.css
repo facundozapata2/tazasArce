@@ -71,9 +71,9 @@
 }
 
 .product-grill img{
-    width: clamp(200px, 150px, 100px);
-    height: clamp(100px, 150px, 400px);
-    aspect-ratio: 16/9;
+    width: clamp(4rem, calc(50vw - .75rem), 25rem);
+    height: clamp(4rem, 10.5rem, 400px);
+    /* aspect-ratio: ; */
     object-fit: cover;
     transition: filter .35s;
     cursor: pointer;
@@ -83,7 +83,7 @@
     filter: brightness(.75);
 }
 
-.product-img{
+/* .product-img{
     height: clamp(100% 120px 180px);
     width: 100%;
-}
+} */

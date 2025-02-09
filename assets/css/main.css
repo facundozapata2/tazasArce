@@ -140,10 +140,14 @@ h1{
 /* desktop */
 @media (min-width: 787px){
     .product-card_section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (min-width: 1246px){
+    .product-card_section{
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 /* section .about-us */
 
 .about-us_section{
