@@ -53,27 +53,22 @@
 
 .product-grill{
     width: 100%;
+
     /* padding: 0 1rem; */
     gap: .1rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
+    /* flex-wrap: wrap; */
 }
 
 /* desktop */
 
-@media (min-width: 787px){
-    .product-grill{
-        grid-template-columns: repeat(4, 1fr);
-        padding: 0;
-    
-    }
-}
 
 .product-grill img{
-    width: clamp(4rem, calc(50vw - .75rem), 25rem);
-    height: clamp(4rem, 10.5rem, 400px);
-    /* aspect-ratio: ; */
+    width: clamp(calc(33.33vw - .75rem), calc(50vw - .75rem), calc(50vw - .75rem));
+    /* height: clamp(4rem, 10.5rem, 400px); */
+    aspect-ratio: 16/9;
     object-fit: cover;
     transition: filter .35s;
     cursor: pointer;
@@ -82,6 +77,18 @@
 .product-grill img:hover{
     filter: brightness(.75);
 }
+
+
+@media screen and (min-width: 787px){
+    .product-grill{
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-grill img{
+        width: calc(25vw - .75rem);
+    };
+}
+
 
 /* .product-img{
     height: clamp(100% 120px 180px);
